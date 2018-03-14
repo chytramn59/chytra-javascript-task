@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>hide and show</title>
+    </head>
+    <body>
+    	<h1 onclick="myFunction()">Heading</h1>
+    	<div id="myDIV">
+			<p>loops are used when user want to repeat some statements in a program. These three loops are used for repetition. but the most useful and important loop is for loop. But here i will tell you the main difference between while loop and do</p>
+			<p>loops are used when user want to repeat some statements in a program. These three loops are used for repetition. but the most useful and important loop is for loop. But here i will tell you the main difference between while loop and do</p>
+		</div>
+</body>
+</html>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>

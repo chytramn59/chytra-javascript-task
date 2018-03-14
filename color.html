@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>colors</title>
+    </head>
+    <body>
+    	<h1 id="demo" onclick="add()">red</h1>
+    	<h1 id="test" onclick ="right()">blue</h1>
+    	<h1 id="mid" onclick="left()">green</h1>
+    </body>
+    </html>
+    <script>
+    	function add(){
+    		var x = document.getElementById('demo');
+    if (x.style.background === "red") {
+    	x.style.background = "white";
+    }
+     else {
+        x.style.background = "red";
+    }
+}
+function right(){
+    		var x = document.getElementById('test');
+    if (x.style.background === "blue") {
+    	x.style.background = "white";
+    }
+     else {
+        x.style.background = "blue";
+    }
+}
+function left(){
+    		var x = document.getElementById('mid');
+    if (x.style.background === "green") {
+    	x.style.background = "white";
+    }
+     else {
+        x.style.background = "green";
+    }
+}
+    </script>	
