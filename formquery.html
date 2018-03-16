@@ -4,14 +4,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		$("#display").hide();
+		$("#example").hide();
 $("button").click(function(){
 	if($("#add").val()=="" || $("#add1").val()== "" || $("#add2").val()=="" || $("#add3").val()== "")
 	{
 		alert("please fill the form");
 	}else{
-		$("#formValidate").hide();
-		$("#display").show();
+		$("#sample").hide();
+		$("#example").show();
 		var firstname=$("#add").val();
 		$("#sum").text(firstname);
 		var lastname=$("#add1").val();
@@ -27,14 +27,14 @@ $("button").click(function(){
 	</script>
 </head>
 <body>
-	<div id="formValidate">
+	<div id="sample">
 		<label>First Name</label><input type="text" name="first Name" id="add"/>
 		<label>Last Name</label><input type="text" name="last Name" id="add1"/>
 		<label>email</label><input type="text" name="email" id="add2"/>
 		<label>adress</label><input type="text" name="adress" id="add3"/></br>
 		<button type="button">click</button>
 	</div>
-	<div id="display" style="display:none">
+	<div id="example" style="display:none">
 	<h1>firstname</h1><h3 id="sum"></h3>
 	<h1>lastname</h1><h3 id="sum1"></h3>
 	<h1>email</h1><h3 id="sum2"></h3>
